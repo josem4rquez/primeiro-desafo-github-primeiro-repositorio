@@ -1,61 +1,78 @@
-Git
+# **Git/GitHub**
 
-Comandos: 
+**Comandos:** 
 
 	⁃	cd
 	⁃	dir
 	⁃	mkdir
 	⁃	del / rmdir
-(Todos esses comandos possuem variantes, chamadas “flags” que alteram os comandos, uma dessas flags é a “-a” para identificar arquivos ocultos)
 
-(Ao colocar “*” no comando git add, ele commita todos os arquivos para o staged)
+(Todos esses comandos possuem variantes, chamadas “*flags*” que alteram os comandos, uma dessas *flags* é a “-a” para identificar arquivos ocultos)
 
-Dir - Comando para dir lista todos os passos, e diretórios onde você está situado
+(Ao colocar “*” no comando *git add*, ele commita todos os arquivos para o staged)
 
-Cd - É usado para navegar entre as pastas (use “cd /“ para ir para um local específico)
-[para voltar é usado “cd ..”]
+*Dir* - Comando para dir lista todos os passos, e diretórios onde você está situado
 
-Mkdir - Usado para criar uma pasta
+*Cd* - É usado para navegar entre as pastas (use “*cd /*“ para ir para um local específico)
+[para voltar é usado “*cd ..*”]
 
-Echo - “Print” um texto de volta para o terminal (devolve oque você digita)
+*Mkdir* - Usado para criar uma pasta
 
-Git config —list (Você vê as configurações especificas do seu git)
+*Echo* - “Print” um texto de volta para o terminal (devolve oque você digita)
 
-Del - Deleta (Delete arquivos)
+*Git config* —list - (Você vê as configurações especificas do seu git)
 
-Rmdir - (usado para deletar repositórios)
+*Del* - Deleta (Delete arquivos)
 
-Comando para limpar a tela: Cls
+*Rmdir* - (usado para deletar repositórios)
+
+Comando para limpar a tela: *Cls* ou *Clear*
 
 (Se você apertar Tab o terminal auto completa o código)
 
 (Se você apertar A setinha para cima você re-visita todos os códigos ja usados no terminal)
 
+Oque é um repositório?:
+
+![Captura de tela 2024-09-24 152637](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 152637.png)
+
+
+
 ———————————————————————
 
-Como Git funciona “Por debaixo dos panos”
+**Como Git funciona “Por debaixo dos panos”**
 
-Sha1: Algoritmo de interpretação, ele pega o arquivo e embaralha ele de forma específica, a saída dessa encriptação geram um conjunto de caracteres de 40 dígitos, e esse conjunto é único
-
+**Sha1**: Algoritmo de interpretação, ele pega o arquivo e embaralha ele de forma específica, a saída dessa encriptação geram um conjunto de caracteres de 40 dígitos, e esse conjunto é único
 
 ———————————————————————
 
-Objetos Internos Git
+**Objetos Internos Git**
 
 O Git é composto por 3 Objetos e dentre eles o:
 
-Blobs: É um objeto que contem metadados de códigos e Objetos colocados dentro do Git como; tipo do objeto, tamanho da string, tamanho do arquivo e dentre outros (ele vai ter “\0nomedorarquivo”) ((não guarda o nome do arquivo apenas o sha1))
+**Blobs**: É um objeto que contem metadados de códigos e Objetos colocados dentro do Git como; tipo do objeto, tamanho da _string_, tamanho do arquivo e dentre outros (**ele vai ter “\0nomedorarquivo”**) [**não guarda o nome do arquivo apenas o sha1**]
 
-Trees: São usadas para armazenar Blobs, ao contrario dos Blobs as Trees guardam no nome dos arquivos. a Tree é responsável por criar toda as estrutura desse arquivo, mas ela pode apontar para um Blob ou para outra Tree (As Trees também tem um sha1 de vários metadados, se algo mínimo for alterados a alteração reflete tanto no Blob contido na Tree, tanto quanto na própria Tree)
+**Trees**: São usadas para armazenar Blobs, ao contrario dos Blobs as Trees guardam no nome dos arquivos. a Tree é responsável por criar toda as estrutura desse arquivo, mas ela pode apontar para um Blob ou para outra Tree (As Trees também tem um sha1 de vários metadados, se algo mínimo for alterados a alteração reflete tanto no Blob contido na Tree, tanto quanto na própria Tree)
+
+Mostrando de outra forma:
+
+![Captura de tela 2024-09-24 152739](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 152739.png)
 
 
-Commit: É o Objeto que junta tudo, o Commit aponta para um Parente (ou seia, aponta para o ultimo commit realizado antes dele), aponta para um autor e para a mensagem, ao escrever uma mensagem nesse amontoado de pastas chamado commit você pode dar significado a ele, ele também leva o nome do seu criador, Commit também tem sha1, ao alterar uma blob ele ira gerar um sha1 daquela blob, essa blob por sua vez, tem uma tree apontando para ela,  oque por sua vez vai alterar o sha1 da tree, e o commit que aponta para uma tree também é alterado
 
-O Git é o Sistema mais seguro e confiável!
+**Commit**: É o Objeto que junta tudo, o Commit aponta para um Parente (ou seia, aponta para o ultimo commit realizado antes dele), aponta para um autor e para a mensagem, ao escrever uma mensagem nesse amontoado de pastas chamado commit você pode dar significado a ele, ele também leva o nome do seu criador, Commit também tem sha1, ao alterar uma blob ele ira gerar um sha1 daquela blob, essa blob por sua vez, tem uma tree apontando para ela,  oque por sua vez vai alterar o sha1 da tree, e o commit que aponta para uma tree também é alterado
+
+Outro Exemplo:
+
+![Captura de tela 2024-09-24 153341](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153341.png)
+
+
+
+**O Git é um dos Sistemas mais seguros e confiáveis!**
 
 ———————————————————————
 
-Chaves SSH
+**Chaves SSH**
 
 É uma forma de estabelecer uma conexão segura e encriptada entre duas maquinas
 
@@ -71,28 +88,70 @@ Criando um Commit:
 
 ———————————————————————
 
-Oque é um arquivo Markdown?
+**Oque é um arquivo Markdown?**
 
-O arquivo Markdown é uma forma mais humana de se escrever um arquivo HTML
+O arquivo *Markdown*  é uma forma mais humana de se escrever um arquivo HTML
 
-HTML: Estrutura Básico de qualquer pagina na WEB
+**HTML**: Estrutura Básico de qualquer pagina na WEB
+
+Exemplo:
+
+![Captura de tela 2024-09-24 152826](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 152826.png)
+
+
 
 ———————————————————————
 
-Tracked ou Untraked
+**Tracked ou Untraked**
 
 Dentro dos arquivos rastreado só pelo Git são os Unmodified (Arquivo que não foi modfificado, Modified(Arquivo que ja foi modificado) e o Staged (Staged são apps que se preparam para fazer parte de outro agrupamento)
 
-(O Commit coloca todos os códigos de volta para o Unmodified)
+Exemplo:
 
-(Os arquivos Untracked sãos arquivos que o Git ainda não tem conhecimento deles)
+![Captura de tela 2024-09-24 153437](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153437.png)
+
+(**O Commit coloca todos os códigos de volta para o Unmodified**)
+
+(**Os arquivos Untracked sãos arquivos que o Git ainda não tem conhecimento deles**)
 
 ———————————————————————
 
-Resolvendo Erros no Github
+**Oque um Repositório significa?**
 
-Ao fazer qualquer alterações mínimas em um commit e tentar envia-lo ao GitHub ele vai barrar a passagem, para isso é necessário puxa-lo de volta usando “Git push —global”, arrumar ele, colocar ele novamente no stage e após tudo isso envia-lo
+Neste exato momento você tem a separação de dois ambientes, que são:
+Servidor e Área Desenvolvimento
+
+e esse ambientes tem:
+
+![Captura de tela 2024-09-24 153542](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153542.png)
+
+(**Os arquivos sempre vão alterar entre o repositório de trabalho e o staging area**)
+
+Quando você faz um Commit ele começa integrar o seu Repositório Local, e o repositório local por sua vez pode ser empurrado para um Repositório Remoto
+
+(**Porém você só pode fazer esse envio sem em seu Repositório Local tiver apenas Commits**)
+
+Eles tem a seguinte ordem:
+![Captura de tela 2024-09-24 153647](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153647.png)
+![Captura de tela 2024-09-24 153732](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153732.png)
+
+
+
+Explicação com o uso de comandos:
+![Captura de tela 2024-09-24 153833](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153833.png)
+
+![Captura de tela 2024-09-24 153921](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153921.png)
+
+![Captura de tela 2024-09-24 154030](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 154030.png)
+
+
+
+———————————————————————
+
+**Resolvendo Erros no Github**
+
+Ao fazer qualquer alterações mínimas em um Commit e tentar envia-lo ao GitHub ele vai barrar a passagem, para isso é necessário puxa-lo de volta, consertar ele, colocar ele novamente no Stage e após tudo isso envia-lo
 
 Para Clonar um repositório do GitHub:
 
-Basta apenas copiar o link do Github, e usar o código Git Clone LINK QUE VOCÊ COPIOU
+Basta apenas copiar o link do GitHub, e usar o código *Git Clone LINK QUE VOCÊ COPIOU*
