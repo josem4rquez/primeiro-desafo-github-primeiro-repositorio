@@ -44,11 +44,11 @@ Comando para limpar a tela: *Cls* ou *Clear*
 
 O Git é composto por 3 Objetos e dentre eles o:
 
-**Blobs**: É um objeto que contem metadados de códigos e Objetos colocados dentro do Git como; tipo do objeto, tamanho da _string_, tamanho do arquivo e dentre outros (**ele vai ter “\0nomedorarquivo”**) [**não guarda o nome do arquivo apenas o sha1**]
+**Blobs**: É um objeto que contem metadados de códigos e Objetos colocados dentro do Git como; tipo do objeto, tamanho da _string_, tamanho do arquivo e dentre outros (**ele vai ter “\0nomedorarquivo”**) [**não guarda o nome do arquivo, apenas o sha1**]
 
 **Trees**: São usadas para armazenar Blobs, ao contrario dos Blobs as Trees guardam no nome dos arquivos. a Tree é responsável por criar toda as estrutura desse arquivo, mas ela pode apontar para um Blob ou para outra Tree (As Trees também tem um sha1 de vários metadados, se algo mínimo for alterados a alteração reflete tanto no Blob contido na Tree, tanto quanto na própria Tree)
 
-**Commit**: É o Objeto que junta tudo, o Commit aponta para um Parente (ou seia, aponta para o ultimo commit realizado antes dele), aponta para um autor e para a mensagem, ao escrever uma mensagem nesse amontoado de pastas chamado commit você pode dar significado a ele, ele também leva o nome do seu criador, Commit também tem sha1, ao alterar uma blob ele ira gerar um sha1 daquela blob, essa blob por sua vez, tem uma tree apontando para ela,  oque por sua vez vai alterar o sha1 da tree, e o commit que aponta para uma tree também é alterado
+**Commit**: É o Objeto que junta tudo, o Commit aponta para um Parente (ou seja, aponta para o ultimo commit realizado antes dele), aponta para um autor e para a mensagem, ao escrever uma mensagem nesse amontoado de pastas chamado commit você pode dar significado a ele, ele também leva o nome do seu criador, Commit também tem sha1, ao alterar uma blob ele ira gerar um sha1 daquela blob, essa blob por sua vez, tem uma tree apontando para ela,  oque por sua vez vai alterar o sha1 da tree, e o commit que aponta para uma tree também é alterado
 
 **O Git é um dos Sistemas mais seguros e confiáveis!**
 
@@ -58,7 +58,7 @@ O Git é composto por 3 Objetos e dentre eles o:
 
 É uma forma de estabelecer uma conexão segura e encriptada entre duas maquinas
 
-Token de acesso Pessoal: É um token que fica salvo na sua maquina, e sempre que você for criar um Commit o Git irá pedir p seu Usuário e senha e na hora da senha você usa o Token.
+Token de acesso Pessoal: É um token que fica salvo na sua maquina, e sempre que você for criar um Commit o Git irá pedir o seu Usuário e senha e na hora da senha você usa o Token.
 
 ———————————————————————
 
@@ -100,7 +100,7 @@ Servidor e Área Desenvolvimento
 
 Quando você faz um Commit ele começa integrar o seu Repositório Local, e o repositório local por sua vez pode ser empurrado para um Repositório Remoto
 
-(**Porém você só pode fazer esse envio sem em seu Repositório Local tiver apenas Commits**)
+(**Porém você só pode fazer esse envio em seu Repositório Local tiver apenas Commits**)
 
 ———————————————————————
 
