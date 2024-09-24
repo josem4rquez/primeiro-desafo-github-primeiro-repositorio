@@ -32,12 +32,6 @@ Comando para limpar a tela: *Cls* ou *Clear*
 
 (Se você apertar A setinha para cima você re-visita todos os códigos ja usados no terminal)
 
-Oque é um repositório?:
-
-![Captura de tela 2024-09-24 152637](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 152637.png)
-
-
-
 ———————————————————————
 
 **Como Git funciona “Por debaixo dos panos”**
@@ -54,19 +48,7 @@ O Git é composto por 3 Objetos e dentre eles o:
 
 **Trees**: São usadas para armazenar Blobs, ao contrario dos Blobs as Trees guardam no nome dos arquivos. a Tree é responsável por criar toda as estrutura desse arquivo, mas ela pode apontar para um Blob ou para outra Tree (As Trees também tem um sha1 de vários metadados, se algo mínimo for alterados a alteração reflete tanto no Blob contido na Tree, tanto quanto na própria Tree)
 
-Mostrando de outra forma:
-
-![Captura de tela 2024-09-24 152739](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 152739.png)
-
-
-
 **Commit**: É o Objeto que junta tudo, o Commit aponta para um Parente (ou seia, aponta para o ultimo commit realizado antes dele), aponta para um autor e para a mensagem, ao escrever uma mensagem nesse amontoado de pastas chamado commit você pode dar significado a ele, ele também leva o nome do seu criador, Commit também tem sha1, ao alterar uma blob ele ira gerar um sha1 daquela blob, essa blob por sua vez, tem uma tree apontando para ela,  oque por sua vez vai alterar o sha1 da tree, e o commit que aponta para uma tree também é alterado
-
-Outro Exemplo:
-
-![Captura de tela 2024-09-24 153341](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153341.png)
-
-
 
 **O Git é um dos Sistemas mais seguros e confiáveis!**
 
@@ -94,21 +76,11 @@ O arquivo *Markdown*  é uma forma mais humana de se escrever um arquivo HTML
 
 **HTML**: Estrutura Básico de qualquer pagina na WEB
 
-Exemplo:
-
-![Captura de tela 2024-09-24 152826](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 152826.png)
-
-
-
 ———————————————————————
 
 **Tracked ou Untraked**
 
 Dentro dos arquivos rastreado só pelo Git são os Unmodified (Arquivo que não foi modfificado, Modified(Arquivo que ja foi modificado) e o Staged (Staged são apps que se preparam para fazer parte de outro agrupamento)
-
-Exemplo:
-
-![Captura de tela 2024-09-24 153437](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153437.png)
 
 (**O Commit coloca todos os códigos de volta para o Unmodified**)
 
@@ -121,30 +93,14 @@ Exemplo:
 Neste exato momento você tem a separação de dois ambientes, que são:
 Servidor e Área Desenvolvimento
 
-e esse ambientes tem:
-
-![Captura de tela 2024-09-24 153542](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153542.png)
+	⁃	Servidor: Remote Repository
+	⁃	Área de Desenolvilmento: Working Directory, Staging Área, Local Repository
 
 (**Os arquivos sempre vão alterar entre o repositório de trabalho e o staging area**)
 
 Quando você faz um Commit ele começa integrar o seu Repositório Local, e o repositório local por sua vez pode ser empurrado para um Repositório Remoto
 
 (**Porém você só pode fazer esse envio sem em seu Repositório Local tiver apenas Commits**)
-
-Eles tem a seguinte ordem:
-![Captura de tela 2024-09-24 153647](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153647.png)
-![Captura de tela 2024-09-24 153732](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153732.png)
-
-
-
-Explicação com o uso de comandos:
-![Captura de tela 2024-09-24 153833](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153833.png)
-
-![Captura de tela 2024-09-24 153921](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 153921.png)
-
-![Captura de tela 2024-09-24 154030](C:\Users\Pc\Pictures\Screenshots\Captura de tela 2024-09-24 154030.png)
-
-
 
 ———————————————————————
 
